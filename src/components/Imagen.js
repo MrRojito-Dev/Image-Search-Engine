@@ -12,7 +12,7 @@ const Imagen = (props) => {
                     <p className="card-text">{likes.toLocaleString()} Likes </p>
                     <p className="card-text">{views.toLocaleString()} Vistas </p>
 
-                    <a href={largeImageURL} target="_blank" className="btn btn-primary bt-block">Ver imágen</a>                    
+                    <a href={largeImageURL} target="_blank" rel="noreferrer" className="btn btn-primary bt-block">Ver imágen</a>                    
                 </div>
             </div>
         </div>

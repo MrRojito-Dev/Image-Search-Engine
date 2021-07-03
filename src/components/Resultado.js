@@ -10,7 +10,7 @@ class Resultado extends Component {
 
         if (term.length === 0) return (
             <React.Fragment>
-                <p>¡Empieza a buscar entre miles de Imágenes ahora!</p>
+                <p className="text-secondary">¡Empieza a buscar entre miles de Imágenes ahora!</p>
             </React.Fragment>
         );
 

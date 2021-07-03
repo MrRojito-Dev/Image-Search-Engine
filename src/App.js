@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
+import Navegacion from "./components/Navegacion.js";
 import Buscador from "./components/Buscador.js";
 import Resultado from "./components/Resultado.js";
 
@@ -60,6 +61,10 @@ class App extends Component {
     fetch(url)
       .then((res) => res.json())
       .then((result) => this.setState({ images: result.hits }))
+    .catch((err) => {
+      console.log(err);
+      return null;
+    });
   }
 
   searchData = (term) => {
@@ -73,9 +78,10 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="app container">
-				<div className="jumbotron">
-					<h1 className="text-center">Buscador de imágenes</h1>
+			<div className="app container" id="app">
+        <Navegacion/>
+				<div className="searcher">
+					<h1 className="text-center">Buscador De Imágenes</h1>
 					<Buscador searchData={this.searchData} />
 				</div>
         <div className="row justify-content-center">

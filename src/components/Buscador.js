@@ -20,10 +20,10 @@ class Buscador extends Component {
                 <div className="row">
                     {this.props.message}
                     <div className="form-gruop col-md-8">
-                        <input ref={this.searchRef} type="text" className="form-control form-control-lg" placeholder="Busca tu imágen... Ejemplo: Fútbol"/>
+                        <input ref={this.searchRef} type="text" className="form-control form-control-lg" placeholder="Café"/>
                     </div>
                     <div className="form-gruop col-md-4">
-                        <input type="submit" className="btn btn-lg btn-danger btn-block" value="Buscar"/>
+                        <input type="submit" className="btn btn-lg btn-success" value="Buscar 🔍"/>
                     </div>
                 </div>
             </form>

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Paginacion = (props) => {
     return (
-        <div className="py-3">
-            <button onClick={props.previousPage} type="button" className="btn btn-info mr-1">Anterior &larr;</button>
-            <button onClick={props.afterPage} type="button" className="btn btn-info">Siguiente &rarr;</button>
+        <div className="py-3 text-center">
+            <button onClick={props.previousPage} type="button" className="py-3 btn btn-info mr-1">◀️ Anterior</button>
+            <button onClick={props.afterPage} type="button" className="py-3 btn btn-info">Siguiente ▶️</button>
         </div>
     )
 }
